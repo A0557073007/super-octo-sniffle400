@@ -4,32 +4,164 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>ALMOGHANI</title>
+
 <style>
-*{box-sizing:border-box}html,body{margin:0;background:#f4efe2}body{font-family:Arial,Tahoma,sans-serif}.home{position:relative;width:min(100%,1024px);margin:auto}.home>img{display:block;width:100%;height:auto}.hot{position:absolute;display:block;z-index:5;border-radius:18px;-webkit-tap-highlight-color:transparent}.hot:focus{outline:3px solid rgba(220,178,73,.85);outline-offset:-3px}
+*{
+  box-sizing:border-box;
+}
+
+html,body{
+  margin:0;
+  padding:0;
+  width:100%;
+  background:#f4efe3;
+  font-family:Arial,sans-serif;
+}
+
+.page{
+  position:relative;
+  width:100%;
+  max-width:600px;
+  min-height:100vh;
+  margin:auto;
+  overflow:hidden;
+}
+
+.main-image{
+  display:block;
+  width:100%;
+  height:auto;
+}
+
+/* مناطق الضغط */
+.link{
+  position:absolute;
+  display:block;
+  z-index:10;
+  -webkit-tap-highlight-color:transparent;
+}
+
+/* عدل المواقع لاحقاً حسب التصميم */
+.quran{
+  top:20%;
+  left:5%;
+  width:43%;
+  height:12%;
+}
+
+.hadith{
+  top:20%;
+  right:5%;
+  width:43%;
+  height:12%;
+}
+
+.ghazawat{
+  top:33%;
+  right:5%;
+  width:43%;
+  height:10%;
+}
+
+.seerah{
+  top:33%;
+  left:5%;
+  width:43%;
+  height:10%;
+}
+
+.adhkar{
+  top:44%;
+  right:5%;
+  width:43%;
+  height:9%;
+}
+
+.prophets{
+  top:44%;
+  left:5%;
+  width:43%;
+  height:9%;
+}
+
+.names{
+  top:54%;
+  right:5%;
+  width:43%;
+  height:9%;
+}
+
+.dua{
+  top:54%;
+  left:5%;
+  width:43%;
+  height:9%;
+}
+
+.prayer{
+  top:64%;
+  right:5%;
+  width:43%;
+  height:9%;
+}
+
+.umrah{
+  top:64%;
+  left:5%;
+  width:43%;
+  height:9%;
+}
+
+.hajj{
+  top:74%;
+  right:5%;
+  width:43%;
+  height:9%;
+}
+
+.gooddeeds{
+  top:74%;
+  left:5%;
+  width:43%;
+  height:9%;
+}
 </style>
-</head><body>
-<main class="home">
-<img src="home.png" alt="ALMOGHANI - الموقع الإسلامي">
-<!-- كل أقسام التصميم مرتبطة من داخل index مباشرة -->
-<a class="hot" href="section-1.html" aria-label="ALMOGHANI" style="left:31%;top:7%;width:38%;height:9%"></a>
-<a class="hot" href="section-2.html" aria-label="من القرآن والسنة" style="left:30%;top:16%;width:40%;height:27%"></a>
-<a class="hot" href="section-3.html" aria-label="خير من تعلم القرآن وعلمه" style="left:31%;top:41%;width:38%;height:10%"></a>
-<a class="hot" href="section-4.html" aria-label="الأحاديث النبوية" style="left:3%;top:13%;width:27%;height:20%"></a>
-<a class="hot" href="section-5.html" aria-label="غزوات النبي" style="left:3%;top:34%;width:27%;height:19%"></a>
-<a class="hot" href="section-6.html" aria-label="القرآن الكريم" style="left:70%;top:13%;width:27%;height:20%"></a>
-<a class="hot" href="section-7.html" aria-label="سيرة المصطفى محمد صلى الله عليه وسلم" style="left:70%;top:34%;width:27%;height:19%"></a>
-<a class="hot" href="section-8.html" aria-label="أذكار المسلم" style="left:3%;top:54%;width:15%;height:17%"></a>
-<a class="hot" href="section-9.html" aria-label="قصص الأنبياء" style="left:18%;top:54%;width:16%;height:17%"></a>
-<a class="hot" href="section-10.html" aria-label="أسماء الله الحسنى" style="left:34%;top:54%;width:16%;height:17%"></a>
-<a class="hot" href="section-11.html" aria-label="الدعاء" style="left:50%;top:54%;width:16%;height:17%"></a>
-<a class="hot" href="section-12.html" aria-label="الصلاة" style="left:66%;top:54%;width:16%;height:17%"></a>
-<a class="hot" href="section-13.html" aria-label="العمرة" style="left:82%;top:54%;width:15%;height:17%"></a>
-<a class="hot" href="section-14.html" aria-label="مناسك الحج" style="left:3%;top:72%;width:14%;height:17%"></a>
-<a class="hot" href="section-15.html" aria-label="فضل الأعمال" style="left:17%;top:72%;width:14%;height:17%"></a>
-<a class="hot" href="section-16.html" aria-label="أبواب الجنة الثمانية" style="left:31%;top:72%;width:14%;height:17%"></a>
-<a class="hot" href="section-17.html" aria-label="حصن المسلم" style="left:45%;top:72%;width:14%;height:17%"></a>
-<a class="hot" href="section-18.html" aria-label="سيرة صحابي" style="left:59%;top:72%;width:14%;height:17%"></a>
-<a class="hot" href="section-19.html" aria-label="الصحابة رضي الله عنهم" style="left:73%;top:72%;width:14%;height:17%"></a>
-<a class="hot" href="section-20.html" aria-label="سيرة نبي" style="left:87%;top:72%;width:10%;height:17%"></a>
+</head>
+
+<body>
+
+<main class="page">
+
+<img
+  src="assets/home.png"
+  class="main-image"
+  alt="ALMOGHANI">
+
+<a class="link quran" href="quran/index.html" aria-label="القرآن الكريم"></a>
+
+<a class="link hadith" href="hadith/index.html" aria-label="الأحاديث النبوية"></a>
+
+<a class="link ghazawat" href="ghazawat/index.html" aria-label="غزوات النبي"></a>
+
+<a class="link seerah" href="seerah/index.html" aria-label="السيرة النبوية"></a>
+
+<a class="link adhkar" href="adhkar/index.html" aria-label="أذكار المسلم"></a>
+
+<a class="link prophets" href="prophets/index.html" aria-label="قصص الأنبياء"></a>
+
+<a class="link names" href="allah-names/index.html" aria-label="أسماء الله الحسنى"></a>
+
+<a class="link dua" href="dua/index.html" aria-label="الدعاء"></a>
+
+<a class="link prayer" href="prayer/index.html" aria-label="الصلاة"></a>
+
+<a class="link umrah" href="umrah/index.html" aria-label="العمرة"></a>
+
+<a class="link hajj" href="hajj/index.html" aria-label="مناسك الحج"></a>
+
+<a class="link gooddeeds" href="good-deeds/index.html" aria-label="فضل الأعمال"></a>
+
 </main>
-</body></html>
+
+</body>
+</html>
